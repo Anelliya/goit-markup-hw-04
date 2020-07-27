@@ -18,16 +18,20 @@
             <nav class="main-nav">
                 <a class="logo-text link" lang="en" href="./index.html"> Web <span>Studio</span></a>
                 <ul class="navigation-list list">
-                    <li class="navigation-list-item"><a class="link" href="">Студия</a></li>
+                    <li class="navigation-list-item"><a class="link studio" href="">Студия</a></li>
                     <li class="navigation-list-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
                     <li class="navigation-list-item"><a class="link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <div class="adress">
-                <a class="mail link" href="mailto:info@devstudio.com"><img src="./images/header/mail.svg"
-                        alt="Почта">info@devstudio.com</a>
-                <a class="phone link" href="tel:+380961111111"><img src="./images/header/smartphone.svg"
-                        alt="Контактный телефон">+38 096 111 11
+                <svg class="mail-pic">
+                    <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                <a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <svg class="phone-pic">
+                    <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                <a class="phone link" href="tel:+380961111111">+38 096 111 11
                     11</a>
             </div>
         </div>
@@ -42,39 +46,33 @@
             </div>
         </section>
 
-
         <!--Особенности - почему мы-->
         <section>
-            <div class="container">
+            <div class="container why-are-we">
                 <h2 hidden>Почему мы</h2>
                 <ul class="why-are-we list">
-                    <div class="container">
-                        <li class="why-are-we-list">
-                            <img class="img-background" src="./images/why_we/satellite.svg" alt="Спутник">
-                            <p class="item">Внимание к деталям</p>
-                            <p class="description">Идейные соображения, а также начало повседневной работы по
-                                формированию позиции.</p>
-                        </li>
-                        <li class="why-are-we-list">
-                            <img class="img-background" src="./images/why_we/clock1.svg" alt="Часы">
-                            <p class="item">Пунктуальность</p>
-                            <p class="description">Задача организации, в особенности же рамки и место обучения
-                                кадров влечет за собой.</p>
-                        </li>
-                        <li class="why-are-we-list">
-                            <img class="img-background" src="./images/why_we/diagram1.svg" alt="Диаграмма">
-                            <p class="item">Планирование</p>
-                            <p class="description">Равным образом консультация с широким активом в значительной
-                                степени обуславливает.</p>
-                        </li>
-                        <li class="why-are-we-list">
-                            <img class="img-background" src="./images/why_we/astronaut1.svg" alt="Астронавт">
-                            <p class="item">Внимание к деталям</p>
-                            <p class="description">Значимость этих проблем настолько очевидна, что реализация
-                                плановых заданий.</p>
-                        </li>
-                    </div>
-                </ul>
+                    <li class="why-are-we-list">
+                        <p class="reason-item first-reason-img">Внимание к деталям</p>
+                        <p class="description">Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.</p>
+                    </li>
+                    <li class="why-are-we-list">
+                        <p class="reason-item second-reason-img">Пунктуальность</p>
+                        <p class="description">Задача организации, в особенности же рамки и место обучения
+                            кадров влечет за собой.</p>
+                    </li>
+                    <li class="why-are-we-list">
+                        <p class="reason-item third-reason-img">Планирование</p>
+                        <p class="description">Равным образом консультация с широким активом в значительной
+                            степени обуславливает.</p>
+                    </li>
+                    <li class="why-are-we-list">
+                        <p class="reason-item forth-reason-img">Внимание к деталям</p>
+                        <p class="description">Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.</p>
+                    </li>
+            </div>
+            </ul>
         </section>
 
         <!--Чем мы занимаемся-->
@@ -82,15 +80,15 @@
             <h2 class="header">Чем мы занимаемся</h2>
             <ul class=" list ">
                 <li class="what-are-we-do-list">
-                    <img src="./images/what_we_do/laptop.svg" alt="Ноутбук" width="370">
+                    <img src="./images/what_we_do/loptop.jpg" alt="Ноутбук" width="370">
                     <p class="item">Десктопные приложения</p>
                 </li>
                 <li class="what-are-we-do-list">
-                    <img src="./images/what_we_do/mobile_pic.svg" alt="Телефон" width="370">
+                    <img src="./images/what_we_do/mobile.jpg" alt="Телефон" width="370">
                     <p class="item">Мобильные приложения</p>
                 </li>
                 <li class="what-are-we-do-list">
-                    <img src="./images/what_we_do/monitor.svg" alt="Монитор" width="370">
+                    <img src="./images/what_we_do/monitor.jpg" alt="Монитор" width="370">
                     <p class="item">Дизайнерские решения</p>
                 </li>
             </ul>
@@ -105,24 +103,38 @@
                             width="270" height="260">
                         <p class="name">Николай Кучеренко</p>
                         <p class="position" lang="en">Product Designer</p>
+
                         <ul class="social-list list">
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img class="social-icon"
-                                        src="images/team/instagram_icon.svg" alt="Instagram"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/twitter_icon.svg" alt="Twitter"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/facebook_icon.svg" alt="Facebook"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/linkedIn_icon.svg" alt="LinkedIn"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
+
                     </li>
                     <li class="our-team-list">
                         <img class="our-team-pic" src="./images/team/ivanova_olga.jpg" alt="Ольга Иванова" width="270"
@@ -130,21 +142,33 @@
                         <p class="name">Ольга Иванова</p>
                         <p class="position" lang="en">Frontend Developer</p>
                         <ul class="social-list list">
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="images/team/instagram_icon.svg" alt="Instagram"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/twitter_icon.svg" alt="Twitter"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/facebook_icon.svg" alt="Facebook"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/linkedIn_icon.svg" alt="LinkedIn"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -154,21 +178,33 @@
                         <p class="name">Андрей Шевченко</p>
                         <p class="position" lang="en">Marketing</p>
                         <ul class="social-list list">
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="images/team/instagram_icon.svg" alt="Instagram"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/twitter_icon.svg" alt="Twitter"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/facebook_icon.svg" alt="Facebook"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/linkedIn_icon.svg" alt="LinkedIn"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -178,21 +214,33 @@
                         <p class="name">Иван Николаев</p>
                         <p class="position" lang="en">UI Designer</p>
                         <ul class="social-list list">
-                            <li class="social-links" lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="images/team/instagram_icon.svg" alt="Instagram"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/twitter_icon.svg" alt="Twitter"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/facebook_icon.svg" alt="Facebook"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li lang="en">
-                                <a href="" aria-label="Inatagram" target="_blank"><img
-                                        src="./images/team/linkedIn_icon.svg" alt="LinkedIn"></a>
+                            <li class="social-margin" lang="en">
+                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                    <svg class="social-items">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -207,18 +255,42 @@
             <div class="container">
                 <h2 class="header">Постоянные клиенты</h2>
                 <ul class=" list">
-                    <li class="clients-list"><a href="" target="_blank"><img src="./images/clients/client_1.svg"
-                                alt="Клиент 1"></a></li>
-                    <li class="clients-list"><a href="" target="_blank"><img src="./images/clients/client_2.svg"
-                                alt="Клиент 2"></a></li>
-                    <li class="clients-list"><a href="" target="_blank"><img src="./images/clients/client_3.svg"
-                                alt="Клиент 3"></a></li>
-                    <li class="clients-list"><a href="" target="_blank"><img src="./images/clients/client_4.svg"
-                                alt="Клиент 4"></a></li>
-                    <li class="clients-list"><a href="" target="_blank"><img src="./images/clients/client_5.svg"
-                                alt="Клиент 5"></a></li>
-                    <li class="clients-list"><a href="" target="_blank"><img src="./images/clients/client_6.svg"
-                                alt="Клиент 6"></a></li>
+                    <li class="clients-list">
+                        <a class="client-items-link" href="" target="_blank">
+                            <svg class="client-pic" width="44" height="49">
+                                <use href="./images/sprite.svg#client-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-list">
+                        <a class="client-items-link" href="" target="_blank">
+                            <svg class="client-pic" width="40" height="52">
+                                <use href="./images/sprite.svg#client-2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-list">
+                        <a class="client-items-link" href="" target="_blank">
+                            <svg class="client-pic" width="41" height="42">
+                                <use href="./images/sprite.svg#client-3"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-list">
+                        <a class="client-items-link" href="" target="_blank">
+                            <svg class="client-pic" width="80" height="42">
+                                <use href="./images/sprite.svg#client-4"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-list">
+                        <a class="client-items-link" href="" target="_blank">
+                            <svg class="client-pic" width="59" height="47">
+                                <use href="./images/sprite.svg#client-5"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-list"><a class="client-items-link" href="" target="_blank">
+                            <svg class="client-pic" width="88" height="45">
+                                <use href="./images/sprite.svg#client-6"></use>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
         </section>
@@ -242,18 +314,31 @@
                 <h2 class="join">Присоединяйтесь</h2>
                 <ul class="list" lang="en">
                     <li class="join-item">
-                        <a href="" aria-label="Inatagram" target="_blank"><img src="./images/team/instagram_icon.svg"
-                                alt="Instagram"></a>
-                    <li class="join-item"><a href="" aria-label="Twitter" target="_blank"><img
-                                src="./images/team/twitter_icon.svg" alt="Twitter"></a>
+                        <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    <li class="join-item">
+                        <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="join-item">
-                        <a href="" aria-label="Facebook" target="_blank"><img src="./images/team/facebook_icon.svg"
-                                alt="Facebook"></a>
+                        <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="join-item">
-                        <a href="" aria-label="Linkd" target="_blank"><img src="./images/team/linkedIn_icon.svg"
-                                alt="LinkedIn"></a>
+                        <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
 

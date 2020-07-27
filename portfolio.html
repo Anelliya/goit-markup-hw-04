@@ -13,25 +13,30 @@
 
 <body class="body">
     <!--Шапка сайта-->
+
+
     <header class="header">
         <div class="container">
             <nav class="main-nav">
                 <a class="logo-text link" lang="en" href="./index.html"> Web <span>Studio</span></a>
                 <ul class="navigation-list list">
                     <li class="navigation-list-item"><a class="link" href="./index.html">Студия</a></li>
-                    <li class="navigation-list-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation-list-item"><a class="studio link" href="./portfolio.html">Портфолио</a></li>
                     <li class="navigation-list-item"><a class="link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <div class="adress">
-                <a class="mail link" href="mailto:info@devstudio.com"><img src="./images/header/mail.svg"
-                        alt="Почта">info@devstudio.com</a>
-                <a class="phone link" href="tel:+380961111111"><img src="./images/header/smartphone.svg"
-                        alt="Контактный телефон">+38 096 111 11
+                <svg class="mail-pic">
+                    <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                <a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <svg class="phone-pic">
+                    <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                <a class="phone link" href="tel:+380961111111">+38 096 111 11
                     11</a>
             </div>
         </div>
-
     </header>
 
 
@@ -119,21 +124,33 @@
                 <h2 class="join">Присоединяйтесь</h2>
                 <ul class="list" lang="en">
                     <li class="join-item">
-                        <a href="" aria-label="Inatagram" target="_blank"><img src="./images/team/instagram_icon.svg"
-                                alt="Instagram"></a>
-                    <li class="join-item"><a href="" aria-label="Twitter" target="_blank"><img
-                                src="./images/team/twitter_icon.svg" alt="Twitter"></a>
+                        <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    <li class="join-item">
+                        <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="join-item">
-                        <a href="" aria-label="Facebook" target="_blank"><img src="./images/team/facebook_icon.svg"
-                                alt="Facebook"></a>
+                        <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="join-item">
-                        <a href="" aria-label="Linkd" target="_blank"><img src="./images/team/linkedIn_icon.svg"
-                                alt="LinkedIn"></a>
+                        <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                            <svg class="social-items">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-
             </section>
         </div>
     </footer>
