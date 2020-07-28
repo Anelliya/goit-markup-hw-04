@@ -84,8 +84,8 @@ h2 {
 
 /*logo*/
 .logo-text {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   margin-right: 84px;
   width: 153px;
   font-family: var(--logo-font);
@@ -116,31 +116,13 @@ h2 {
 }
 
 .navigation-list .link {
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .navigation-list-item .studio {
   color: var(--accent-color);
-  padding-bottom: 0;
 }
-
-.navigation-list .studio {
-}
-
-/*
-.navigation-list .studio::after {
-  content: "";
-  display: block;
-  width: 47px;
-  height: 4px;
-  left: 454px;
-  top: 76px;
-  background: #2196f3;
-  border-radius: 2px;
-  margin-top: 28px;
-}
-*/
 
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
@@ -158,32 +140,49 @@ h2 {
 
 .header .mail {
   margin-right: var(--margin-right-list);
+
   font-weight: 500;
   font-size: var(--main-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--second-text-color);
+}
+
+.address-element-pic {
+  vertical-align: middle;
+  padding: 20px 0px;
+  margin-right: 10px;
+  fill: var(--second-text-color);
 }
 
 .mail-pic {
   width: 16px;
-  height: 11;
-  margin-right: 10px;
+  height: 11px;
 }
 
 .phone-pic {
   width: 10px;
   height: 15px;
-  margin-right: 10px;
+}
+
+.address-element-container {
+  display: flex;
+}
+
+.address-element-container:hover .address-element-pic {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .header .mail:hover,
 .header .mail:focus {
-  color: var(--second-text-color);
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header .phone {
   align-items: flex-end;
+
   font-weight: 500;
   font-size: var(--main-font-size);
   line-height: var(--second-font-size);
@@ -199,6 +198,9 @@ h2 {
 /*главный герой*/
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   max-width: 1600px;
   height: 600px;
@@ -210,9 +212,12 @@ h2 {
     url(../images/header/header_img.jpg);
 }
 
-.hero .container {
-  padding: 200px 0;
+.hero-banner {
 }
+
+/*.hero .container {
+  padding: 200px 0;
+}*/
 
 .hero-title {
   margin-bottom: var(--margin-right-list);
@@ -268,7 +273,7 @@ h2 {
   content: "";
   display: inline-block;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -463,7 +468,8 @@ h2 {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 2px solid #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .client-pic {
@@ -580,12 +586,13 @@ h2 {
   height: 38px;
 }
 
-.portfolio-filter-item {
+.portfolio-filter-list-item {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 38px;
   background: #f5f4fa;
   border-radius: 4px;
-  text-align: center;
 }
 
 .portfolio-filter-item:not(:last-child) {
@@ -632,11 +639,19 @@ h2 {
 }
 
 .project .item {
-  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project-list-element {
   padding-bottom: 20px;
+  width: 370px;
   border: 1px solid #eeeeee;
+}
+
+.project-list-element:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .project .item:nth-last-child(-n + 3) {
